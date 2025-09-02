@@ -3,66 +3,211 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PlanBWork - Legal Documents / 法律文件</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <title>Planbwork</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 24px 0;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+        
+        nav a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        main {
+            padding: 60px 0;
+            min-height: calc(100vh - 200px);
+        }
+        
+        h2 {
+            font-size: 32px;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+        
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 48px;
+        }
+        
+        .apps-section {
+            margin-top: 48px;
+        }
+        
+        .apps-section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 24px;
+        }
+        
+        .app-list {
+            border-top: 1px solid #e5e5e5;
+        }
+        
+        .app-item {
+            padding: 24px 0;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        
+        .app-item h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .app-item p {
+            color: #666;
+            margin-bottom: 12px;
+        }
+        
+        .app-links a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 16px;
+            font-size: 14px;
+        }
+        
+        .app-links a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            border-top: 1px solid #e5e5e5;
+            padding: 24px 0;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        
+        .footer-links a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 16px;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 640px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+            
+            nav a {
+                margin-left: 0;
+                margin-right: 16px;
+            }
+            
+            h2 {
+                font-size: 28px;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>PlanBWork Applications</h1>
-            <p class="subtitle">Legal Documents / 法律文件</p>
-        </header>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1>Planbwork</h1>
+                <nav>
+                    <a href="#apps">應用程式</a>
+                    <a href="#contact">聯絡我們</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-        <main>
-            <section class="app-section">
-                <div class="app-header">
-                    <h2>Voxly - 語音心情日記</h2>
-                    <p class="app-description">Voice Mood Diary / 語音心情日記應用程式</p>
-                </div>
-                
-                <div class="documents-grid">
-                    <div class="document-card">
-                        <h3>隱私政策 / Privacy Policy</h3>
-                        <div class="language-links">
-                            <a href="voxly/privacy-policy-zh.html" class="btn btn-primary">
-                                <span class="lang-icon">🇹🇼</span>
-                                中文版
-                            </a>
-                            <a href="voxly/privacy-policy-en.html" class="btn btn-primary">
-                                <span class="lang-icon">🌐</span>
-                                English
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="document-card">
-                        <h3>服務條款 / Terms of Service</h3>
-                        <div class="language-links">
-                            <a href="voxly/terms-of-service-zh.html" class="btn btn-secondary">
-                                <span class="lang-icon">🇹🇼</span>
-                                中文版
-                            </a>
-                            <a href="voxly/terms-of-service-en.html" class="btn btn-secondary">
-                                <span class="lang-icon">🌐</span>
-                                English
-                            </a>
+    <main>
+        <div class="container">
+            <h2>應用程式支援</h2>
+            <p class="subtitle">我們致力於開發優質的行動應用程式，為用戶提供最佳體驗。</p>
+            
+            <section class="apps-section" id="apps">
+                <h3>我們的應用程式</h3>
+                <div class="app-list">
+                    <div class="app-item">
+                        <h4>Voxly</h4>
+                        <p>智慧語音心情日記應用程式，透過語音或文字輕鬆記錄每日的心情和想法。</p>
+                        <div class="app-links">
+                            <a href="voxly/support.html">應用程式支援</a>
+                            <a href="voxly/privacy-policy-zh.html">隱私政策</a>
+                            <a href="voxly/terms-of-service-zh.html">服務條款</a>
                         </div>
                     </div>
                 </div>
             </section>
-        </main>
+            
+            <section id="contact" style="margin-top: 60px;">
+                <h3>聯絡資訊</h3>
+                <p style="margin-top: 16px;">如有任何問題或建議，歡迎與我們聯絡。</p>
+                <p style="margin-top: 8px;">Email: planbworkdev@gmail.com</p>
+            </section>
+        </div>
+    </main>
 
-        <footer>
-            <div class="contact-info">
-                <h3>聯絡資訊 / Contact Information</h3>
-                <p>Email: support@planbwork.com</p>
-                <p>Company: PlanBWork</p>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>&copy; 2025 Planbwork. All rights reserved.</div>
+                <div class="footer-links">
+                    <a href="voxly/privacy-policy-zh.html">隱私政策</a>
+                    <a href="voxly/terms-of-service-zh.html">服務條款</a>
+                </div>
             </div>
-            <div class="copyright">
-                <p>&copy; 2025 PlanBWork. All rights reserved.</p>
-                <p>Last updated: January 2025</p>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
