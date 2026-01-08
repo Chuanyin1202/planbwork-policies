@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Support - Voxmemo - Planbwork</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #ffffff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            border-bottom: 1px solid #e5e5e5;
+            padding: 24px 0;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #1a1a1a;
+        }
+
+        nav a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 48px 0;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 48px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 48px;
+            margin-bottom: 16px;
+        }
+
+        h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 24px;
+            margin-bottom: 12px;
+        }
+
+        p {
+            margin-bottom: 16px;
+        }
+
+        ul, ol {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            background: #f9f9f9;
+            padding: 24px;
+            border-radius: 8px;
+            margin: 32px 0;
+        }
+
+        footer {
+            border-top: 1px solid #e5e5e5;
+            padding: 24px 0;
+            margin-top: 60px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .footer-links a {
+            color: #0066cc;
+            text-decoration: none;
+            margin-right: 16px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 640px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+
+            nav a {
+                margin-left: 0;
+                margin-right: 16px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">Planbwork</a>
+                <nav>
+                    <a href="support-en.html" style="font-weight: 600;">Support</a>
+                    <a href="privacy-policy-en.html">Privacy Policy</a>
+                    <a href="terms-of-service-en.html">Terms of Service</a>
+                    <a href="support.html">中文</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Voxmemo App Support</h1>
+            <p class="subtitle">Technical support and FAQ for AI Voice Memo app</p>
+
+            <h2>About Voxmemo</h2>
+            <p>Voxmemo is an intelligent voice memo application that allows you to quickly record todo items and expenses through voice. The app provides AI-powered smart categorization, time parsing, and local data storage.</p>
+
+            <h2>Main Features</h2>
+            <ul>
+                <li><strong>Voice Recording:</strong> Record voice memos and automatically convert to text</li>
+                <li><strong>Smart Categorization:</strong> AI automatically identifies todo types (Event/Checklist)</li>
+                <li><strong>Time Parsing:</strong> Automatically parses time and location information from voice</li>
+                <li><strong>Expense Tracking:</strong> Quickly record expenses and income</li>
+                <li><strong>Local Storage:</strong> All data securely stored on your device</li>
+            </ul>
+
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>App can't record audio?</h3>
+            <p>Please ensure you have granted Voxmemo microphone permissions:</p>
+            <ul>
+                <li><strong>iOS:</strong> Settings → Privacy & Security → Microphone → Voxmemo</li>
+                <li><strong>Android:</strong> Settings → Apps → Voxmemo → Permissions → Microphone</li>
+            </ul>
+
+            <h3>Speech-to-text is inaccurate?</h3>
+            <p>Speech-to-text uses OpenAI Whisper API for processing. For best results:</p>
+            <ul>
+                <li>Record in a quiet environment</li>
+                <li>Speak clearly at a moderate pace</li>
+                <li>Avoid excessive background noise</li>
+            </ul>
+
+            <h3>Todo categorization is wrong?</h3>
+            <p>AI smart categorization is based on semantic analysis and may occasionally misclassify. You can:</p>
+            <ul>
+                <li>Manually change the todo item type</li>
+                <li>Edit the todo content to more accurately express your intent</li>
+            </ul>
+
+            <h3>How to backup expense records?</h3>
+            <p>Currently, Voxmemo stores all data locally on your device. Deleting the app will also delete all data, so please ensure you have completed necessary backups before deletion.</p>
+
+            <h3>App crashes or runs slowly?</h3>
+            <p>Please try the following solutions:</p>
+            <ul>
+                <li>Restart the application</li>
+                <li>Check for app updates</li>
+                <li>Ensure your device has sufficient storage space</li>
+                <li>Restart your device</li>
+            </ul>
+
+            <h2>Technical Support</h2>
+            <p>If you encounter technical issues or need further assistance, please contact our technical support team:</p>
+
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> planbworkdev@gmail.com</p>
+                <p><strong>Support Languages:</strong> Traditional Chinese, English</p>
+            </div>
+
+            <p>When contacting us, please provide the following information to speed up problem resolution:</p>
+            <ul>
+                <li>Device model and operating system version</li>
+                <li>Voxmemo app version</li>
+                <li>Specific problem description and reproduction steps</li>
+                <li>Error message screenshots (if applicable)</li>
+            </ul>
+
+            <h2>Privacy and Data Security</h2>
+            <p>We highly value your privacy. All todo items and expense records are stored locally on your device and are not uploaded to cloud servers. Audio files are only used for transcription and are deleted immediately after processing. For detailed information, please refer to our <a href="privacy-policy-en.html" style="color: #0066cc;">Privacy Policy</a>.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>&copy; 2026 Planbwork. All rights reserved.</div>
+                <div class="footer-links">
+                    <a href="../index.html">Home</a>
+                    <a href="privacy-policy-en.html">Privacy Policy</a>
+                    <a href="terms-of-service-en.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
