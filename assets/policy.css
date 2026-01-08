@@ -155,7 +155,7 @@ main a:hover {
         position: fixed;
         right: 32px;
         top: 140px;
-        width: 220px;
+        width: 280px;
         max-height: calc(100vh - 200px);
         margin-bottom: 0;
         overflow: auto;
