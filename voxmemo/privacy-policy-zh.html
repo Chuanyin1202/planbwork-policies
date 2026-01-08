@@ -4,171 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>隱私政策 - Voxmemo - Planbwork</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background: #ffffff;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        header {
-            border-bottom: 1px solid #e5e5e5;
-            padding: 24px 0;
-        }
-
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 18px;
-            font-weight: 600;
-            text-decoration: none;
-            color: #1a1a1a;
-        }
-
-        nav a {
-            color: #0066cc;
-            text-decoration: none;
-            margin-left: 24px;
-            font-size: 14px;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        main {
-            padding: 48px 0;
-        }
-
-        h1 {
-            font-size: 32px;
-            font-weight: 600;
-            margin-bottom: 8px;
-        }
-
-        .update-date {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 32px;
-        }
-
-        h2 {
-            font-size: 20px;
-            font-weight: 600;
-            margin-top: 48px;
-            margin-bottom: 16px;
-        }
-
-        h3 {
-            font-size: 16px;
-            font-weight: 600;
-            margin-top: 24px;
-            margin-bottom: 12px;
-        }
-
-        p {
-            margin-bottom: 16px;
-        }
-
-        ul, ol {
-            margin-left: 24px;
-            margin-bottom: 16px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 24px 0;
-        }
-
-        th, td {
-            padding: 12px;
-            text-align: left;
-            border: 1px solid #e5e5e5;
-        }
-
-        th {
-            background: #f9f9f9;
-            font-weight: 600;
-        }
-
-        footer {
-            border-top: 1px solid #e5e5e5;
-            padding: 24px 0;
-            margin-top: 60px;
-            font-size: 14px;
-            color: #666;
-        }
-
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-
-        .footer-links a {
-            color: #0066cc;
-            text-decoration: none;
-            margin-right: 16px;
-        }
-
-        .footer-links a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 640px) {
-            .header-content {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 16px;
-            }
-
-            nav a {
-                margin-left: 0;
-                margin-right: 16px;
-            }
-
-            h1 {
-                font-size: 28px;
-            }
-
-            .footer-content {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-
-            table {
-                font-size: 14px;
-            }
-
-            th, td {
-                padding: 8px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../assets/policy.css">
 </head>
 <body>
     <header>
@@ -189,10 +25,26 @@
         <div class="container">
             <h1>隱私政策</h1>
             <p class="update-date">最後更新日期：2026 年 1 月 8 日</p>
+            <div class="toc">
+                <div class="toc-title">目錄</div>
+                <ul>
+                    <li><a href="#data-collection">1. 資料收集範圍</a></li>
+                    <li><a href="#data-usage">2. 資料使用方式</a></li>
+                    <li><a href="#data-storage">3. 資料儲存與安全</a></li>
+                    <li><a href="#data-sharing">4. 資料分享政策</a></li>
+                    <li><a href="#your-rights">5. 您的權利</a></li>
+                    <li><a href="#children">6. 兒童隱私保護</a></li>
+                    <li><a href="#retention">7. 資料保存期限</a></li>
+                    <li><a href="#permissions">8. 權限使用說明</a></li>
+                    <li><a href="#changes">9. 隱私政策變更</a></li>
+                    <li><a href="#contact">10. 聯絡我們</a></li>
+                    <li><a href="#law">11. 適用法律</a></li>
+                </ul>
+            </div>
 
             <p>Planbwork（以下簡稱「我們」）非常重視您的隱私權。本隱私政策說明 Voxmemo 應用程式（以下簡稱「本應用」）如何收集、使用、儲存和保護您的個人資料。使用本應用即表示您同意本隱私政策的條款。</p>
 
-            <h2>1. 資料收集範圍</h2>
+            <h2 id="data-collection">1. 資料收集範圍</h2>
 
             <h3>1.1 您主動提供的資料</h3>
             <ul>
@@ -206,7 +58,7 @@
 
             <p><strong>重要說明：</strong>我們不會收集您的真實姓名、電子郵件、電話號碼或其他可直接識別身份的個人資訊。本應用不需要註冊帳號即可使用。</p>
 
-            <h2>2. 資料使用方式</h2>
+            <h2 id="data-usage">2. 資料使用方式</h2>
 
             <table>
                 <thead>
@@ -240,7 +92,7 @@
                 </tbody>
             </table>
 
-            <h2>3. 資料儲存與安全</h2>
+            <h2 id="data-storage">3. 資料儲存與安全</h2>
 
             <h3>3.1 本地儲存</h3>
             <ul>
@@ -264,7 +116,7 @@
                 <li>我們採取合理的技術措施保護資料</li>
             </ul>
 
-            <h2>4. 資料分享政策</h2>
+            <h2 id="data-sharing">4. 資料分享政策</h2>
 
             <p>我們不會出售、交易或以其他方式向第三方傳輸您的個人資料，除以下情況：</p>
 
@@ -279,7 +131,7 @@
             <h3>4.3 保護權益</h3>
             <p>保護我們或他人的權利、財產或安全時</p>
 
-            <h2>5. 您的權利</h2>
+            <h2 id="your-rights">5. 您的權利</h2>
 
             <h3>5.1 資料控制權</h3>
             <ul>
@@ -288,11 +140,11 @@
                 <li>刪除權：刪除應用程式將移除所有本地資料</li>
             </ul>
 
-            <h2>6. 兒童隱私保護</h2>
+            <h2 id="children">6. 兒童隱私保護</h2>
 
             <p>本應用不針對 13 歲以下兒童設計。我們不會故意收集 13 歲以下兒童的個人資料。如果您發現有兒童向我們提供了個人資料，請立即聯絡我們，我們將採取措施刪除相關資料。</p>
 
-            <h2>7. 資料保存期限</h2>
+            <h2 id="retention">7. 資料保存期限</h2>
 
             <table>
                 <thead>
@@ -321,18 +173,18 @@
                 </tbody>
             </table>
 
-            <h2>8. 權限使用說明</h2>
+            <h2 id="permissions">8. 權限使用說明</h2>
 
             <p>本應用需要以下權限：</p>
             <ul>
                 <li><strong>麥克風權限：</strong>用於錄製語音備忘錄，語音將轉換為文字後刪除</li>
             </ul>
 
-            <h2>9. 隱私政策變更</h2>
+            <h2 id="changes">9. 隱私政策變更</h2>
 
             <p>我們可能會不定期更新本隱私政策。任何變更都會在本頁面公布，並更新「最後更新日期」。重大變更時，我們會透過應用內通知告知您。建議您定期查看本隱私政策。</p>
 
-            <h2>10. 聯絡我們</h2>
+            <h2 id="contact">10. 聯絡我們</h2>
 
             <p>如果您對本隱私政策有任何疑問或建議，請透過以下方式聯絡我們：</p>
 
@@ -342,7 +194,7 @@
 
             <p>我們會儘快回覆您的詢問。</p>
 
-            <h2>11. 適用法律</h2>
+            <h2 id="law">11. 適用法律</h2>
 
             <p>本隱私政策受中華民國（台灣）法律管轄。任何因本隱私政策引起的爭議，應以台灣台北地方法院為第一審管轄法院。</p>
         </div>
