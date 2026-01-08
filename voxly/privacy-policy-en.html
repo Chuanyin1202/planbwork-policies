@@ -188,64 +188,88 @@
     <main>
         <div class="container">
             <h1>Privacy Policy</h1>
-            <p class="update-date">Last Updated: September 2, 2025</p>
+            <p class="update-date">Last Updated: January 8, 2026</p>
             
-            <p>Planbwork (hereinafter referred to as "we") highly values your privacy rights. This privacy policy explains how the Voxly app (hereinafter referred to as "this app") collects, uses, stores, and protects your personal data. By using this app, you agree to the terms of this privacy policy.</p>
+            <p>Planbwork ("we", "us", or "our") values your privacy. This Privacy Policy explains how the Voxly app ("the App") collects, uses, stores, and protects your data. By using the App, you agree to this Privacy Policy.</p>
             
-            <h2>1. Data Collection Scope</h2>
+            <h2>1. Data We Collect</h2>
             
-            <h3>1.1 Data You Actively Provide</h3>
+            <h3>1.1 Data You Provide</h3>
             <ul>
-                <li>Mood record content: Diary content you input through voice or text</li>
-                <li>Audio recordings: Voice content you record (only used for text transcription)</li>
-                <li>Community interaction content: Anonymous content you post in Tree Hole and Message in a Bottle features</li>
+                <li>Diary content: Voice or text entries you create</li>
+                <li>Audio recordings: Voice memos you record</li>
+                <li>Photos: Photos you attach to memories (stored locally)</li>
+                <li>Community content: Anonymous posts and replies in Tree Hole and Message in a Bottle</li>
+                <li>Community photos: Photos you choose to share in community features</li>
             </ul>
             
-            <h3>1.2 Automatically Collected Data</h3>
+            <h3>1.2 Data Collected Automatically</h3>
             <ul>
-                <li>Device identifier: Used to generate anonymous user ID</li>
-                <li>Usage statistics: App usage frequency, feature usage (collected anonymously)</li>
-                <li>Error reports: Technical information from app crashes or errors</li>
-                <li>Location information: Only when you choose to add location tags during recording (optional feature)</li>
+                <li>Anonymous ID: Randomly generated ID stored on your device for community features</li>
+                <li>Push notification token: Used to send notifications (stored by a cloud service provider)</li>
+                <li>Usage analytics: App usage events and feature usage</li>
+                <li>Crash logs: Technical error reports</li>
+                <li>Device/app info: App version, OS version, and language settings</li>
+                <li>Location data: If you grant permission, we collect coordinates to show location and weather in entries</li>
             </ul>
             
-            <p><strong>Important Note:</strong> We do not collect your real name, email address, phone number, or other personally identifiable information.</p>
+            <p><strong>Important:</strong> Voxly does not require account registration. We do not collect your real name, email address, phone number, or other directly identifying information.</p>
             
-            <h2>2. Data Usage Methods</h2>
+            <h2>2. How We Use Your Data</h2>
             
             <table>
                 <thead>
                     <tr>
                         <th>Data Type</th>
-                        <th>Usage Purpose</th>
+                        <th>Purpose</th>
                         <th>Processing Method</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Mood Records</td>
+                        <td>Diary content</td>
                         <td>Personal diary storage and viewing</td>
-                        <td>Local SQLite database storage</td>
+                        <td>Stored locally in SQLite database</td>
                     </tr>
                     <tr>
-                        <td>Audio Files</td>
+                        <td>Audio recordings</td>
                         <td>Voice-to-text transcription</td>
-                        <td>Processed via OpenAI Whisper API then deleted</td>
+                        <td>Stored locally; may be sent to a third-party cloud transcription service when online</td>
                     </tr>
                     <tr>
-                        <td>Record Text</td>
-                        <td>Emotion analysis, text optimization</td>
-                        <td>Analyzed via OpenAI GPT-4o-mini</td>
+                        <td>Text analysis</td>
+                        <td>Emotion analysis and text enhancement</td>
+                        <td>Processed by a third-party AI service</td>
                     </tr>
                     <tr>
-                        <td>Community Content</td>
-                        <td>Tree Hole, Message in a Bottle features</td>
-                        <td>Anonymous storage in Firebase Firestore</td>
+                        <td>Location + weather</td>
+                        <td>Add location and weather context to entries</td>
+                        <td>Coordinates processed by third-party map and weather providers; stored locally</td>
                     </tr>
                     <tr>
-                        <td>Usage Statistics</td>
-                        <td>Improve app experience</td>
-                        <td>Anonymous analysis via Firebase Analytics</td>
+                        <td>Community content</td>
+                        <td>Tree Hole and Message in a Bottle features</td>
+                        <td>Anonymous storage in a cloud database</td>
+                    </tr>
+                    <tr>
+                        <td>Community photos</td>
+                        <td>Display photos in community posts</td>
+                        <td>Uploaded to a cloud storage provider with a public URL</td>
+                    </tr>
+                    <tr>
+                        <td>Notification token</td>
+                        <td>Send push notifications</td>
+                        <td>Stored by a cloud messaging service</td>
+                    </tr>
+                    <tr>
+                        <td>Subscriptions/purchases</td>
+                        <td>Manage paid features</td>
+                        <td>Processed by Apple/Google and third-party subscription services; entitlements stored locally</td>
+                    </tr>
+                    <tr>
+                        <td>Usage analytics & crash logs</td>
+                        <td>Improve stability and features</td>
+                        <td>Processed by third-party analytics and crash reporting services</td>
                     </tr>
                 </tbody>
             </table>
@@ -254,143 +278,142 @@
             
             <h3>3.1 Local Storage</h3>
             <ul>
-                <li>Personal mood records are stored in your device's SQLite database</li>
-                <li>Supports biometric (fingerprint/face) encryption protection</li>
-                <li>Data is not automatically backed up to the cloud</li>
+                <li>Diary content, audio files, photos, and settings are stored locally on your device</li>
+                <li>App lock PIN is stored in secure storage; biometric checks are handled by the OS</li>
+                <li>Backups/export files are stored locally unless you choose to share them</li>
             </ul>
             
-            <h3>3.2 Cloud Processing</h3>
-            
-            <p><strong>OpenAI API:</strong></p>
+            <h3>3.2 Cloud Processing and Services</h3>
             <ul>
-                <li>Audio files are only used for transcription and immediately deleted after processing</li>
-                <li>Text content is used for emotion analysis but not permanently stored</li>
-                <li>Complies with OpenAI's data processing policies</li>
-            </ul>
-            
-            <p><strong>Firebase Services:</strong></p>
-            <ul>
-                <li>Community features use anonymous ID system</li>
-                <li>Uses Google Cloud security infrastructure</li>
+                <li><strong>Cloud AI services:</strong> Transcription and text analysis when online</li>
+                <li><strong>Cloud database/storage services:</strong> Community content and photos</li>
+                <li><strong>Analytics/crash services:</strong> Usage statistics and error reports</li>
+                <li><strong>Push notification services:</strong> Notification delivery</li>
+                <li><strong>Subscription services:</strong> Entitlement management</li>
+                <li><strong>Map/weather data providers:</strong> Reverse geocoding and weather</li>
             </ul>
             
             <h3>3.3 Security Measures</h3>
             <ul>
                 <li>All network transmissions use HTTPS encryption</li>
-                <li>API keys are securely stored and not exposed on client side</li>
-                <li>Regular security patch updates</li>
+                <li>Cloud data is protected by provider security controls and access rules</li>
             </ul>
             
-            <h2>4. Data Sharing Policy</h2>
+            <h2>4. Data Sharing</h2>
             
-            <p>We do not sell, trade, or otherwise transfer your personal data to third parties, except in the following circumstances:</p>
+            <p>We do not sell your data. We share data only with service providers needed to operate the App or when legally required.</p>
             
             <h3>4.1 Service Providers</h3>
             <ul>
-                <li>OpenAI - Voice-to-text and emotion analysis services</li>
-                <li>Google Firebase - Infrastructure and analytics services</li>
+                <li>Cloud AI services (transcription and text analysis)</li>
+                <li>Cloud database and storage services (community features and photos)</li>
+                <li>Analytics and crash reporting services</li>
+                <li>Push notification services</li>
+                <li>Subscription management services</li>
+                <li>Apple App Store / Google Play (payment processing)</li>
+                <li>Map and weather data providers</li>
             </ul>
             
             <h3>4.2 Legal Requirements</h3>
-            <p>When required by law or judicial process</p>
+            <p>When required by law or legal process.</p>
             
-            <h3>4.3 Rights Protection</h3>
-            <p>To protect our or others' rights, property, or safety</p>
+            <h3>4.3 Protection</h3>
+            <p>To protect our rights, safety, or property, or those of others.</p>
             
-            <h2>5. Your Rights</h2>
+            <h2>5. Your Choices and Rights</h2>
             
-            <h3>5.1 Data Control Rights</h3>
+            <h3>5.1 Data Control</h3>
             <ul>
-                <li>View right: View all your record content at any time</li>
-                <li>Modification right: Edit or delete any record</li>
-                <li>Export right: Export records as files for backup</li>
-                <li>Deletion right: Completely delete all data within the app</li>
+                <li>Access, edit, or delete diary entries at any time</li>
+                <li>Export your data using in-app backup/export features</li>
+                <li>Delete local data by clearing the app or uninstalling</li>
             </ul>
             
-            <h3>5.2 Privacy Settings</h3>
+            <h3>5.2 Settings and Permissions</h3>
             <ul>
-                <li>Choose whether to use biometric protection</li>
-                <li>Control whether to record location information</li>
-                <li>Choose whether to participate in community features</li>
-                <li>Manage notification reminder settings</li>
+                <li>Disable location or notifications in system settings</li>
+                <li>Enable or disable community features and auto-sync</li>
+                <li>Manage subscription or restore purchases through the app stores</li>
             </ul>
             
-            <h2>6. Children's Privacy Protection</h2>
+            <p>If you want a community post removed, contact us with details and we will review the request.</p>
             
-            <p>This app is not designed for children under 13 years of age. We do not knowingly collect personal data from children under 13. If you discover that a child has provided us with personal data, please contact us immediately, and we will take steps to delete the relevant data.</p>
+            <h2>6. Children's Privacy</h2>
             
-            <h2>7. Data Retention Period</h2>
+            <p>The App is not intended for children under 13. We do not knowingly collect personal data from children under 13. If you believe a child has provided data, contact us and we will delete it.</p>
+            
+            <h2>7. Data Retention</h2>
             
             <table>
                 <thead>
                     <tr>
                         <th>Data Type</th>
-                        <th>Retention Period</th>
-                        <th>Description</th>
+                        <th>Retention</th>
+                        <th>Notes</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Personal Records</td>
-                        <td>Permanent (until you delete)</td>
+                        <td>Diary content, audio, photos</td>
+                        <td>Until you delete</td>
                         <td>Stored locally on device</td>
                     </tr>
                     <tr>
-                        <td>Audio Files</td>
-                        <td>Immediately deleted after processing</td>
-                        <td>Not retained in cloud</td>
-                    </tr>
-                    <tr>
-                        <td>Tree Hole Posts</td>
-                        <td>Limited period</td>
-                        <td>According to system operational needs</td>
+                        <td>Tree Hole posts</td>
+                        <td>Up to ~90 days (high-interaction posts up to ~180 days)</td>
+                        <td>Displayed within retention windows; may be cleaned later</td>
                     </tr>
                     <tr>
                         <td>Message in a Bottle</td>
-                        <td>Limited period</td>
-                        <td>Cleaned up after conversation ends</td>
+                        <td>Floating bottles up to ~30 days; conversations up to ~60 days</td>
+                        <td>Older content may be hidden or removed</td>
                     </tr>
                     <tr>
-                        <td>Analytics Data</td>
-                        <td>According to service needs</td>
-                        <td>Anonymous statistical use</td>
+                        <td>Community photos</td>
+                        <td>Linked to community content</td>
+                        <td>Stored with a cloud storage provider</td>
+                    </tr>
+                    <tr>
+                        <td>Push notification token</td>
+                        <td>Until refreshed or notifications disabled</td>
+                        <td>Stored by a cloud messaging service</td>
+                    </tr>
+                    <tr>
+                        <td>Analytics/crash logs</td>
+                        <td>Per provider settings</td>
+                        <td>Retention follows provider policies</td>
                     </tr>
                 </tbody>
             </table>
             
-            <h2>8. Cookies and Tracking Technologies</h2>
-            
-            <p>This app does not use cookies. We use the following technologies to improve services:</p>
+            <h2>8. Permissions Used</h2>
             <ul>
-                <li>Firebase Analytics: Anonymous collection of usage statistics</li>
-                <li>Firebase Crashlytics: Collection of crash reports</li>
-                <li>Local Storage: Store app settings and preferences</li>
+                <li><strong>Microphone:</strong> Record voice entries</li>
+                <li><strong>Notifications:</strong> Send reminders and updates</li>
+                <li><strong>Photos:</strong> Select photos from your gallery</li>
+                <li><strong>Location (optional):</strong> Add location/weather to entries</li>
+                <li><strong>Biometric (optional):</strong> Unlock app lock via device biometrics</li>
             </ul>
             
             <h2>9. Privacy Policy Changes</h2>
-            
-            <p>We may update this privacy policy from time to time. Any changes will be published on this page and the "Last Updated" date will be updated. For significant changes, we will notify you through in-app notifications. We recommend that you review this privacy policy regularly.</p>
+            <p>We may update this policy from time to time. We will post updates on this page and revise the "Last Updated" date. For significant changes, we will notify you in the app.</p>
             
             <h2>10. Contact Us</h2>
-            
-            <p>If you have any questions or suggestions about this privacy policy, please contact us through the following means:</p>
-            
+            <p>If you have questions about this Privacy Policy, contact us:</p>
             <p><strong>Planbwork</strong><br>
             Email: planbworkdev@gmail.com<br>
             Region: Taiwan</p>
+            <p>We will respond as soon as possible.</p>
             
-            <p>We will reply to your inquiries as soon as possible.</p>
-            
-            <h2>11. Applicable Law</h2>
-            
-            <p>This privacy policy is governed by the laws of the Republic of China (Taiwan). Any disputes arising from this privacy policy shall be subject to the jurisdiction of the Taipei District Court in Taiwan as the court of first instance.</p>
+            <h2>11. Governing Law</h2>
+            <p>This Privacy Policy is governed by the laws of the Republic of China (Taiwan). Any disputes shall be subject to the jurisdiction of the Taipei District Court as the court of first instance.</p>
         </div>
     </main>
 
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div>&copy; 2025 Planbwork. All rights reserved.</div>
+                <div>&copy; 2026 Planbwork. All rights reserved.</div>
                 <div class="footer-links">
                     <a href="../index.html">Back to Home</a>
                     <a href="terms-of-service-en.html">Terms of Service</a>
